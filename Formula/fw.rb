@@ -3,7 +3,7 @@ class Fw < Formula
   homepage "https://github.com/DimitriGeelen/agentic-engineering-framework"
   url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "3071faa817081250aec0457d06965858d5cc61385ce1520798ae1435e3e833e1"
-  license :cannot_represent
+  license "Apache-2.0"
   head "https://github.com/DimitriGeelen/agentic-engineering-framework.git", branch: "master"
 
   depends_on "bash"
