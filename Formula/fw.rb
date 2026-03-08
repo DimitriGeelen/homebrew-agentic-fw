@@ -1,8 +1,8 @@
 class Fw < Formula
   desc "Governance framework for AI coding agents — task traceability, structural gates, audit trails"
   homepage "https://github.com/DimitriGeelen/agentic-engineering-framework"
-  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.1.tar.gz"
-  sha256 "7f346cad1a9a50c2da9c7101041f7110e863ec8bf308c09f9b37c6f7d204c1bd"
+  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.2.tar.gz"
+  sha256 "cc919150c44629b03ce1168cb0937a6d9cb3484ab9c3b8139e06bbad33d7fe6c"
   license "Apache-2.0"
   head "https://github.com/DimitriGeelen/agentic-engineering-framework.git", branch: "master"
 
@@ -37,7 +37,10 @@ class Fw < Formula
         2. Build now — fire off tasks immediately:
            fw work-on "Set up project" --type build
 
-        3. Dashboard — see your project at a glance:
+        3. Existing project — register your codebase:
+           fw fabric register src/main.ts && fw fabric drift
+
+        4. Dashboard — see your project at a glance:
            fw serve
 
       Documentation: https://github.com/DimitriGeelen/agentic-engineering-framework
