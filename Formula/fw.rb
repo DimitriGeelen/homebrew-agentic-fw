@@ -1,8 +1,8 @@
 class Fw < Formula
   desc "Governance framework for AI coding agents — task traceability, structural gates, audit trails"
   homepage "https://github.com/DimitriGeelen/agentic-engineering-framework"
-  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "f4a72f29ba94a0c53c199886c88694dfb83c574610060cc4d6e5675dd613723d"
+  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "f2c04dc81584bcba33ff13bd27f1b47a4343a2ce6a487db4e81b07e5b526b5fd"
   license "Apache-2.0"
   head "https://github.com/DimitriGeelen/agentic-engineering-framework.git", branch: "master"
 
