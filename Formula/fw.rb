@@ -1,8 +1,8 @@
 class Fw < Formula
   desc "Governance framework for AI coding agents — task traceability, structural gates, audit trails"
   homepage "https://github.com/DimitriGeelen/agentic-engineering-framework"
-  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.2.tar.gz"
-  sha256 "cc919150c44629b03ce1168cb0937a6d9cb3484ab9c3b8139e06bbad33d7fe6c"
+  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.3.tar.gz"
+  sha256 "71348c58c34c4f6d34805247af839c2a5bf9cb4fcf67833bfe4efe4368e694e5"
   license "Apache-2.0"
   head "https://github.com/DimitriGeelen/agentic-engineering-framework.git", branch: "master"
 
@@ -11,11 +11,9 @@ class Fw < Formula
   depends_on "python@3.11" => :optional
 
   def install
-    # Install framework files
     libexec.install Dir["*"]
     libexec.install Dir[".*"].reject { |f| f.end_with?(".", "..") }
 
-    # Create fw wrapper that points to the installed framework
     (bin/"fw").write <<~EOS
       #!/bin/bash
       export FRAMEWORK_ROOT="#{libexec}"
@@ -27,7 +25,8 @@ class Fw < Formula
     <<~EOS
       fw is ready! Initialize a project:
 
-        cd your-project && git init && fw init
+        fw init                  # current directory
+        fw init /path/to/project # specific directory
 
       Then choose your path:
 
