@@ -5,9 +5,17 @@ Homebrew tap for the [Agentic Engineering Framework](https://github.com/DimitriG
 ## Install
 
 ```bash
-brew tap DimitriGeelen/agentic-fw
-brew install fw
+brew install DimitriGeelen/agentic-fw/agentic-fw
 ```
+
+Or tap first, then install:
+
+```bash
+brew tap DimitriGeelen/agentic-fw
+brew install agentic-fw
+```
+
+> **Note:** The CLI command is `fw`, the Homebrew formula is `agentic-fw` (to avoid collision with [brocode/fw](https://github.com/brocode/fw) in Homebrew core).
 
 ## Usage
 
@@ -30,12 +38,21 @@ fw handover --commit
 
 ```bash
 brew update
-brew upgrade fw
+brew upgrade agentic-fw
+```
+
+## Migrating from `fw` formula
+
+If you previously installed as `fw` and got the wrong package (brocode/fw), run:
+
+```bash
+brew uninstall fw
+brew install DimitriGeelen/agentic-fw/agentic-fw
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall fw
+brew uninstall agentic-fw
 brew untap DimitriGeelen/agentic-fw
 ```
