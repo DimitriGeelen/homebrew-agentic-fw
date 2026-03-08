@@ -1,8 +1,8 @@
 class AgenticFw < Formula
   desc "Governance framework for AI coding agents — task traceability, structural gates, audit trails"
   homepage "https://github.com/DimitriGeelen/agentic-engineering-framework"
-  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.5.tar.gz"
-  sha256 "b62ccefb2aa59f3c81d7dfcba4e03babcf066c2fd32769cf708a1fd6cd1bfb2c"
+  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.6.tar.gz"
+  sha256 "3a5ba13b21a17a723a32dee4a04fa81b6f01ddb5018351ef3623e75eb8b4ea6c"
   license "Apache-2.0"
   head "https://github.com/DimitriGeelen/agentic-engineering-framework.git", branch: "master"
 
@@ -17,7 +17,7 @@ class AgenticFw < Formula
     (bin/"fw").write <<~EOS
       #!/bin/bash
       export FRAMEWORK_ROOT="#{libexec}"
-      exec "#{libexec}/bin/fw" "$@"
+      exec "#{libexec}/bin/fw" ""
     EOS
   end
 
