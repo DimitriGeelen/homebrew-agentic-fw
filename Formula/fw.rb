@@ -25,12 +25,12 @@ class Fw < Formula
 
   def caveats
     <<~EOS
-      To initialize the framework in your project:
+      fw is ready! Navigate to any project directory and run a command —
+      if no project is detected, fw will offer to initialize automatically.
+
+      Or initialize manually:
         cd your-project
         fw init
-
-      To check framework health:
-        fw doctor
 
       Documentation: https://github.com/DimitriGeelen/agentic-engineering-framework
     EOS
