@@ -1,8 +1,8 @@
 class Fw < Formula
   desc "Governance framework for AI coding agents — task traceability, structural gates, audit trails"
   homepage "https://github.com/DimitriGeelen/agentic-engineering-framework"
-  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "f2c04dc81584bcba33ff13bd27f1b47a4343a2ce6a487db4e81b07e5b526b5fd"
+  url "https://github.com/DimitriGeelen/agentic-engineering-framework/archive/refs/tags/v1.2.1.tar.gz"
+  sha256 "7f346cad1a9a50c2da9c7101041f7110e863ec8bf308c09f9b37c6f7d204c1bd"
   license "Apache-2.0"
   head "https://github.com/DimitriGeelen/agentic-engineering-framework.git", branch: "master"
 
@@ -25,12 +25,20 @@ class Fw < Formula
 
   def caveats
     <<~EOS
-      fw is ready! Navigate to any project directory and run a command —
-      if no project is detected, fw will offer to initialize automatically.
+      fw is ready! Initialize a project:
 
-      Or initialize manually:
-        cd your-project
-        fw init
+        cd your-project && git init && fw init
+
+      Then choose your path:
+
+        1. Think first — explore before building:
+           fw inception start "Define goals and architecture"
+
+        2. Build now — fire off tasks immediately:
+           fw work-on "Set up project" --type build
+
+        3. Dashboard — see your project at a glance:
+           fw serve
 
       Documentation: https://github.com/DimitriGeelen/agentic-engineering-framework
     EOS
